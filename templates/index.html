@@ -43,82 +43,29 @@
     <hr class="my-4">
     <p>To get started, click the button down below!</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Let's Get Started!</a>
+      <a class="btn btn-primary btn-lg" href="/predict" role="button">Let's Get Started!</a>
     </p>
   </div>
 
   <div class="container">
-    <form method="POST">
-      <div class="row">
-        <div class="col-lg-6 col-sm-6">
-          <fieldset class="form-group">
-            <legend>Borough</legend>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="1" checked>
-              <label class="form-check-label" for="gridRadios1">Bronx</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="2">
-              <label class="form-check-label" for="gridRadios2">Brooklyn</label>
-            </div>
-            <div class="form-check disabled">
-              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="3">
-              <label class="form-check-label" for="gridRadios3">Manhattan</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="4">
-              <label class="form-check-label" for="gridRadios2">Queens</label>
-            </div>
-            <div class="form-check disabled">
-              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="5">
-              <label class="form-check-label" for="gridRadios3">Staten Island</label>
-            </div>
-          </fieldset>
-        </div>
-
-        <div class="col-lg-6 col-sm-6">
-          <fieldset class="form-group">
-            <legend>Room Type</legend>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="roomtyperadio" id="Radios" value="1" checked>
-              <label class="form-check-label" for="exampleRadios1">Entire Home/Apartment</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="roomtyperadio" id="Radios" value="2">
-              <label class="form-check-label" for="exampleRadios2">Private Room</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="roomtyperadio" id="Radios" value="3">
-              <label class="form-check-label" for="exampleRadios3">Shared Room</label>
-            </div>
-          </fieldset>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6 col-sm-12">
-          <div class="form-group">
-            <legend>Reviews per Month (0 to 50)</legend>
-            <input type="range" class="form-control-range" name="reviewmonth" min="0" max="50" step="0.01" id="formControlRange">
+    <div class="row">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="static/images/airbnblogo1.png" alt="First slide">
           </div>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <div class="form-group">
-            <legend>Availability in a Year (0 to 365)</legend>
-            <input type="range" class="form-control-range" name="availability" min="0" max="365" step="1" id="formControlRange">
+          <div class="carousel-item">
+            <img class="d-block w-100" src="static/images/airbnblogo2.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="static/images/airbnblogo3.png" alt="Third slide">
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </form>
+    </div>
   </div>
 
-  <p>testing {{InputData}}</p>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
