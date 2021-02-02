@@ -74,7 +74,7 @@ def predict():
         
         minprice = round(min(price), 2)
         maxprice = round(max(price), 2)
-        avgprice = round((sum(price) / 3), 2)
+        avgprice = round((sum(price) / 2), 2)
         
         return render_template("predict.html", MinPrice=minprice, MaxPrice=maxprice, Average=avgprice, Borough=boroughpicked, RoomType=roompicked, ReviewPerMonth=review_input, Availability=avail_input)
     else:
