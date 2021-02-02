@@ -12,7 +12,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler, LabelEncoder
 
 linear_model = joblib.load("models/LR.h5")
 xgb_model = joblib.load("models/xgbmodel.h5")
-rf_model = joblib.load("models/rf.h5")
+#rf_model = joblib.load("models/rf.h5")
 
 
 app = Flask(__name__)
@@ -66,8 +66,9 @@ def predict():
         xgbtest = xgb.DMatrix(df)
         linear_predict = linear_model.predict(df)
         xgb_predict = xgb_model.predict(xgbtest)
-        rf_predict = rf_model.predict(df)
-        price = [linear_predict[0][0], xgb_predict[0], rf_predict[0]]
+        #rf_predict = rf_model.predict(df)
+        #price = [linear_predict[0][0], xgb_predict[0], rf_predict[0]]
+        price = [linear_predict[0][0], xgb_predict[0]]
 
         print(price)
         
