@@ -8,12 +8,11 @@ import os
 import seaborn as sns
 import joblib
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, LabelEncoder
-#from keras.models import load_model
 
 
 linear_model = joblib.load("models/LR.h5")
 xgb_model = joblib.load("models/xgbmodel.h5")
-#nn_model = load_model("models/NN.h5")
+rf_model = joblib.load("models/rf.h5")
 
 
 app = Flask(__name__)
@@ -67,14 +66,14 @@ def predict():
         xgbtest = xgb.DMatrix(df)
         linear_predict = linear_model.predict(df)
         xgb_predict = xgb_model.predict(xgbtest)
-        #nn_predict = nn_model.predict(df)
-        price = [linear_predict[0][0], xgb_predict[0]]
+        rf_predict = rf_model.predict(df)
+        price = [linear_predict[0][0], xgb_predict[0], rf_predict[0]]
 
         print(price)
         
         minprice = round(min(price), 2)
         maxprice = round(max(price), 2)
-        avgprice = round((sum(price) / 2), 2)
+        avgprice = round((sum(price) / 3), 2)
         
         return render_template("predict.html", MinPrice=minprice, MaxPrice=maxprice, Average=avgprice, Borough=boroughpicked, RoomType=roompicked, ReviewPerMonth=review_input, Availability=avail_input)
     else:
