@@ -8,7 +8,7 @@ import os
 import seaborn as sns
 import joblib
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, LabelEncoder
-from keras.models import load_model
+#from keras.models import load_model
 
 
 linear_model = joblib.load("models/LR.h5")
