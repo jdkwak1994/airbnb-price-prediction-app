@@ -1,8 +1,7 @@
 # Airbnb Price Prediction Application
 The purpose of this project is to create a price prediction app for Airbnb NYC housings through various inputs such as borough, room type, reviews per month, and availability in a year.
 
-You can access the application through the link below:
-https://jdkwak1994-airbnb-price-predic.herokuapp.com/
+You can access the application through the link: https://jdkwak1994-airbnb-price-predic.herokuapp.com/
 
 ### Dataset Sources:
 * link here
