@@ -1,27 +1,33 @@
 # Airbnb Price Prediction Application
+The purpose of this project is to create a price prediction app for Airbnb NYC housings through various inputs such as borough, room type, reviews per month, and availability in a year.
 
-### The Problem
-Using machine learning models (linear regression, random forest, xgboost) to predict NYC Airbnb price and understand some of the key driving factors behind the pricing of any given listing.
+You can access the application through the link below:
+https://jdkwak1994-airbnb-price-predic.herokuapp.com/
 
-### Hosting Application
-Out team will be utilizing flask app and html to host data and deploy to Heroku.
+### Dataset Sources:
+* link here
 
-### Preprocessing/Data Cleaning
-Our group will work in Jupyter Notebook to complete any preprocessing and data cleaning that is needed before training and testing each model.
+---
 
-### Model Testing/Selection
-Our group will train and test 3 different models stated above to predict the price of Airbnb listings in the NYC area.
-We will be using variables listed below in testing models:
-* Borough Type: One of the 5 boroughs of NYC
-* Room Type: Entire Home/Apt, Private, or Shared Room
-* Reviews per Month: Ranges from 0 to 5 that represents how many reviews were left on Airbnb app
-* Availability in a Year: Ranges from 0 to 365 that represents how many days is the location available for use
+### Project Description
+**Step 1: Machine Learning Models**
+- descriptions here
 
-### Data Visualization
-Our team will also use Tableau to visualize our findings during the exploration of the model testing/selection process.
+**Step 2: HTML/CSS/JS**
+- descriptions here
 
-#### Group Members
-* Adriana Cieslak
-* Anumala Thapa
-* Jeongdae (JD) Kwak
-* Samuel Okunola
+**Step 3: Flask App and Heroku Deployment**
+- descriptions here
+
+---
+
+### Sample Screenshots
+* **Main Page**
+
+* **Input Page**
+
+* **Data Visualization Page**
+
+---
+
+### Getting Started
