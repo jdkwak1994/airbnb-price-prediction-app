@@ -23,10 +23,13 @@ https://jdkwak1994-airbnb-price-predic.herokuapp.com/
 
 ### Sample Screenshots
 * **Main Page**
+![Screenshot](templates/static/images/mainpage.png "Screenshot")
 
-* **Input Page**
+* **Prediction Page**
+![Screenshot](templates/static/images/predictionpage.png "Screenshot")
 
-* **Data Visualization Page**
+* **Infographic Page**
+![Screenshot](templates/static/images/infographicpage.png "Screenshot")
 
 ---
 
